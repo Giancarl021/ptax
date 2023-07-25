@@ -28,14 +28,16 @@
     "pre-commit": [
         "format",
         "build",
-        "test",
         "git-add"
     ],
     "private": false,
     "repository": "https://github.com/Giancarl021/ptax.git",
     "author": "Giancarlo Fontela da Luz <gian.f.luz@hotmail.com>",
     "keywords": [
-        "transoform"
+        "dollar",
+        "ptax",
+        "brl",
+        "usd"
     ],
     "dependencies": {
         "axios": "^1.4.0"
