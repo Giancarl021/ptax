@@ -1,5 +1,7 @@
 # ptax
 
+![](assets/logo.svg)
+
 Carrega dados de compra e venda do dólar PTAX a partir do banco central.
 
 ## Por quê?
