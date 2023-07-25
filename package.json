@@ -1,0 +1,43 @@
+{
+    "name": "@giancarl021/ptax",
+    "version": "0.1.0",
+    "description": "Carrega dados de compra e venda do dólar PTAX a partir do banco central",
+    "main": "lib/index.js",
+    "files": [
+        "lib/**/*"
+    ],
+    "scripts": {
+        "build": "tspc",
+        "test": "ts-node index.test.ts",
+        "format": "prettier -w --config .prettierrc --ignore-path .gitignore .",
+        "ci": "pnpm install --frozen-lockfile",
+        "git-add": "git add ."
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.4.4",
+        "pre-commit": "^1.2.2",
+        "prettier": "^3.0.0",
+        "ts-node": "^10.9.1",
+        "ts-patch": "^3.0.2",
+        "typescript": "^5.1.6",
+        "typescript-transform-paths": "^3.4.6"
+    },
+    "pre-commit": [
+        "format",
+        "build",
+        "test",
+        "git-add"
+    ],
+    "private": false,
+    "repository": "https://github.com/Giancarl021/ptax.git",
+    "author": "Giancarlo Fontela da Luz <gian.f.luz@hotmail.com>",
+    "keywords": [
+        "transoform"
+    ],
+    "dependencies": {
+        "axios": "^1.4.0"
+    }
+}
